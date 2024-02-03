@@ -30,15 +30,15 @@ public class HighlandsBiomeSettings extends BiomeSettings {
     public final Element badlands = new Element("Badlands", 202, "WARM");
     public final Element birchHills = new Element("Birch Hills", 203);
     public final Element bog = new Element("Bog", 204, true, Climate.COOL.name);
-    public final Element cliffs = new Element("Cliffs", 205, ClimateDistribution.MEDIUM.name());
+    public final Element cliffs = new Element("Cliffs", 205, ClimateDistribution.COOLWARM.name());
     public final Element desertMountains = new Element("Desert Mountains", 206, "HOT");
     public final Element dunes = new Element("Dunes", 207, Climate.HOT.name);
     public final Element estuary = new Element("Estuary", 208, "WARM");
-    public final Element flyingMountains = new Element("Flying Mountains", 209, ClimateDistribution.MEDIUM.name());
+    public final Element flyingMountains = new Element("Flying Mountains", 209, ClimateDistribution.COOLWARM.name());
     public final Element glacier = new Element("Glacier", 210, Climate.SNOWY.name);
-    public final Element highlandsb = new Element("Highlands", 211, ClimateDistribution.MEDIUM.name());
-    public final Element lowlands = new Element("Lowlands", 212, ClimateDistribution.MEDIUM.name());
-    public final Element meadow = new Element("Meadow", 213, true, ClimateDistribution.MEDIUM.name());
+    public final Element highlandsb = new Element("Highlands", 211, ClimateDistribution.COOLWARM.name());
+    public final Element lowlands = new Element("Lowlands", 212, ClimateDistribution.COOLWARM.name());
+    public final Element meadow = new Element("Meadow", 213, true, ClimateDistribution.COOLWARM.name());
     public final ID ocean2 = new ID("Improved Oceans", 229);
     public final Element outback = new Element("Outback", 214, Climate.HOT.name);
     public final Element pinelands = new Element("Pinelands", 215, true, "COOL");
@@ -53,8 +53,8 @@ public class HighlandsBiomeSettings extends BiomeSettings {
     public final Element tropics = new Element("Tropics", 224, "HOT");
     public final Element tropicalIslands = new Element("Tropical Islands", 225, 1, true, Climate.DEEP_OCEAN.name);
     public final Element tundra = new Element("Tundra", 226, Climate.SNOWY.name);
-    public final Element woodlands = new Element("Woodlands", 227, ClimateDistribution.MEDIUM.name());
-    public final Element woodlandMountains = new Element("Woodland Mountains", 228, ClimateDistribution.MEDIUM.name());
+    public final Element woodlands = new Element("Woodlands", 227, ClimateDistribution.COOLWARM.name());
+    public final Element woodlandMountains = new Element("Woodland Mountains", 228, "COOLWARM");
 
     public final ID baldHill = new ID("Bald Hill", 238);
     public final ID canyon = new ID("Canyon", 242);

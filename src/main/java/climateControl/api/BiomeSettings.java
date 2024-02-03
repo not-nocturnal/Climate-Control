@@ -37,8 +37,11 @@ abstract public class BiomeSettings extends Settings {
         villagesCategory = category(categoryName + "Villages");
         climateCategory = category(
             categoryName + "Climates",
-            "Climate Types are: SNOWY,COOL,WARM,HOT,OCEAN,DEEP_OCEAN"
-                + "MEDIUM,PLAINS,LAND.  MEDIUM is COOL and WARM, PLAINS is COOL and WARM and HOT, LAND is all four land");
+            "Climate types are: SNOWY,COOL,WARM,HOT,OCEAN,DEEP_OCEAN\n"
+                + "A biome can be assigned multiple climate types using the following values:\n"
+                + "Two climates: SNOWYCOOL, SNOWYWARM, SNOWYHOT, COOLWARM (alias: MEDIUM), COOLHOT, WARMHOT\n"
+                + "Three climates: NOTHOT, NOTWARM, NOTCOOL, NOTSNOWY (alias: PLAINS)\n"
+                + "Misc: LAND (all four land climates), WATER (both water climates), ALL (both land and water)");
     }
 
     public ArrayList<Element> elements() {
@@ -133,7 +136,7 @@ abstract public class BiomeSettings extends Settings {
                 temp = BiomeGenBase.getBiomeGenArray()[biomeID().value()].getTempCategory();
                 // ClimateControl.logger.info(" temp for "+this.name + " biome id" + biomeID().value());
                 if (temp == BiomeGenBase.TempCategory.COLD) return ClimateDistribution.SNOWY;
-                if (temp == BiomeGenBase.TempCategory.MEDIUM) return ClimateDistribution.MEDIUM;
+                if (temp == BiomeGenBase.TempCategory.MEDIUM) return ClimateDistribution.COOLWARM;
                 if (temp == BiomeGenBase.TempCategory.WARM) return ClimateDistribution.HOT;
             } catch (Exception e) {
                 // ClimateControl.logger.info("temp for " + name + " error " + e.toString());
