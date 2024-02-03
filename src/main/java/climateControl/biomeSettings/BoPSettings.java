@@ -49,7 +49,7 @@ public class BoPSettings extends BiomeSettings {
     public final Element coralReef = new Element("Coral Reef", 94, 0, "OCEAN");
     public final ID corruptedSandsNether = new ID("Corrupted Sands (Nether)", 81);
     public final ID corruptedSands = new ID("Corrupted Sands", 109);
-    public final Element crag = new Element("Crag", 191, 3, "MEDIUM");
+    public final Element crag = new Element("Crag", 191, 3, "COOLWARM");
     // public final ID deadForestSnow = new ID("Dead Forest (Snow)",193);
     public final Element deadForest = new Element("Dead Forest", 192, 7, true, "COOL");
     public final Element deadSwamp = new Element("Dead Swamp", 194, 7, true, "WARM");
@@ -61,7 +61,7 @@ public class BoPSettings extends BiomeSettings {
     public final Element flowerField = new Element("Flower Field", 199, 3, true, "WARM");
     public final Element frostForest = new Element("Frost Forest", 200, 7, true, "SNOWY");
     public final Element fungiForest = new Element("Fungi Forest", 201, 3);
-    public final Element garden = new Element("Garden", 202, 3, ClimateDistribution.MEDIUM.name());
+    public final Element garden = new Element("Garden", 202, 3, ClimateDistribution.COOLWARM.name());
     public final ID glacier = new ID("Glacier", 203);
     public final Element grassland = new Element("Grassland", 204, true, "COOL");
     public final ID gravelBeach = new ID("Gravel Beach", 75);
@@ -86,12 +86,12 @@ public class BoPSettings extends BiomeSettings {
     // public final ID mesa = new ID("Mesa",220);
     public final Element moor = new Element("Moor", 221, true, "COOL");
     public final Element mountain = new Element("Mountain", 222, "WARM");
-    public final Element mysticGrove = new Element("Mystic Grove", 223, 3, "MEDIUM");
+    public final Element mysticGrove = new Element("Mystic Grove", 223, 3, "COOLWARM");
     public final ID oasis = new ID("Oasis", 224);
     // public final ID oceanicAbyss = new ID("Oceanic Abyss (Ocean)",72);
     public final Element ominousWoods = new Element("Ominous Woods", 225, 3, "COOL");
-    public final Element orchard = new Element("Orchard", 226, 0, ClimateDistribution.MEDIUM.name());
-    public final Element originVally = new Element("Origin Valley", 227, 1, "MEDIUM");
+    public final Element orchard = new Element("Orchard", 226, 0, ClimateDistribution.COOLWARM.name());
+    public final Element originVally = new Element("Origin Valley", 227, 1, "COOLWARM");
     public final Element outback = new Element("Outback", 228, 7, true, "HOT");
     // public final ID overgrownBeach = new ID("Overgrown Beach",76);
     // public final ID overgrownGreens = new ID("Overgrown Greens",59);
@@ -104,7 +104,7 @@ public class BoPSettings extends BiomeSettings {
     public final ID quagmire = new ID("Quagmire", 232);
     public final Element rainforest = new Element("Rainforest", 233, 5, true, "WARM");
     public final Element redwoodForest = new Element("Redwood Forest", 234, 7, true, "COOL");
-    public final Element sacredSprings = new Element("Sacred Springs", 235, 3, ClimateDistribution.MEDIUM.name());
+    public final Element sacredSprings = new Element("Sacred Springs", 235, 3, ClimateDistribution.COOLWARM.name());
     public final ID savanna = new ID("Savanna", 236);
     public final ID savannaPlateau = new ID("Savanna Plateau (Sub-Biome)", 61);
     public final ID scrubland = new ID("Scrubland", 237);

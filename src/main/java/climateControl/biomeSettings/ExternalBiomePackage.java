@@ -45,7 +45,7 @@ public class ExternalBiomePackage extends BiomePackage {
             super(biomeCategory);
             String[] names = nameList.split(",");
             for (int i = 0; i < names.length; i++) {
-                biomes.add(new Element(names[i], -1, 10, false, ClimateDistribution.MEDIUM.name()));
+                biomes.add(new Element(names[i], -1, 10, false, ClimateDistribution.COOLWARM.name()));
             }
         }
 

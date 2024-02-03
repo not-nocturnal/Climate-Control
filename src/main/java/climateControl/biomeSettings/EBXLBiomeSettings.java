@@ -23,33 +23,33 @@ public class EBXLBiomeSettings extends BiomeSettings {
     public final Element autumnwoods = new Element("Autumn Woods", 61, Climate.COOL.name);
     public final Element birchforest = new Element("Birch Forest", 62, Climate.WARM.name);
     public final Element extremejungle = new Element("Extreme Jungle", 63, Climate.HOT.name);
-    public final Element forestedisland = new Element("Forested Island", 65, ClimateDistribution.MEDIUM.name());
-    public final Element forestedhills = new Element("Forested Hills", 64, ClimateDistribution.MEDIUM.name());
+    public final Element forestedisland = new Element("Forested Island", 65, ClimateDistribution.COOLWARM.name());
+    public final Element forestedhills = new Element("Forested Hills", 64, ClimateDistribution.COOLWARM.name());
     public final Element glacier = new Element("Glacier", 66, Climate.SNOWY.name);
     public final Element greenhills = new Element("Green Hills", 67, Climate.COOL.name);
     public final Element icewasteland = new Element("Ice Wasteland", 41, Climate.SNOWY.name);
     public final Element greenswamp = new Element("Green Swamp", 40, Climate.WARM.name);
     public final ID marsh = new ID("Marsh", -1);
-    public final Element meadow = new Element("Meadow", 43, ClimateDistribution.MEDIUM.name());
+    public final Element meadow = new Element("Meadow", 43, ClimateDistribution.COOLWARM.name());
     public final Element minijungle = new Element("Minijungle", 44, Climate.HOT.name);
     public final Element mountaindesert = new Element("Mountain Desert", 45, Climate.HOT.name);
-    public final Element mountainridge = new Element("Mountain Ridge", 46, ClimateDistribution.PLAINS.name());
+    public final Element mountainridge = new Element("Mountain Ridge", 46, ClimateDistribution.NOTSNOWY.name());
     public final Element mountaintaiga = new Element("Mountain Taiga", 47, Climate.COOL.name);
-    public final Element pineforest = new Element("Pine Forest", 48, ClimateDistribution.MEDIUM.name());
+    public final Element pineforest = new Element("Pine Forest", 48, ClimateDistribution.COOLWARM.name());
     public final Element rainforest = new Element("Rainforest", 49, Climate.HOT.name);
     public final Element redwoodforest = new Element("Redwood Forest", 50, ClimateDistribution.COOL.name());
     public final Element redwoodlush = new Element("Lush Redwood Forest", 51, ClimateDistribution.WARM.name());
     public final Element savanna = new Element("Savanna", 52, Climate.HOT.name);
-    public final Element shrubland = new Element("Shrubland", 53, ClimateDistribution.PLAINS.name());
+    public final Element shrubland = new Element("Shrubland", 53, ClimateDistribution.NOTSNOWY.name());
     public final Element snowyforest = new Element("Snowy Forest", 54, Climate.SNOWY.name);
     public final Element snowyrainforest = new Element("Snowy Rainforest", 55, Climate.SNOWY.name);
     public final Element temperaterainforest = new Element(
         "Temperate Rainforest",
         56,
-        ClimateDistribution.MEDIUM.name());
+        ClimateDistribution.COOLWARM.name());
     public final Element tundra = new Element("Tundra", 57, Climate.SNOWY.name);
-    public final Element wasteland = new Element("Wasteland", 58, ClimateDistribution.PLAINS.name());
-    public final Element woodlands = new Element("Woodlands", 59, ClimateDistribution.MEDIUM.name());
+    public final Element wasteland = new Element("Wasteland", 58, ClimateDistribution.NOTSNOWY.name());
+    public final Element woodlands = new Element("Woodlands", 59, ClimateDistribution.COOLWARM.name());
 
     public EBXLBiomeSettings() {
         super(biomeCategory);

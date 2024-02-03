@@ -14,51 +14,66 @@ public class ClimateDistribution {
 
     private ArrayList<Climate> climates = new ArrayList<Climate>();
     private final String name;
-    public static ClimateDistribution SNOWY = new ClimateDistribution(Climate.SNOWY, "SNOWY");
-    public static ClimateDistribution COOL = new ClimateDistribution(Climate.COOL, "COOL");
-    public static ClimateDistribution WARM = new ClimateDistribution(Climate.WARM, "WARM");
-    public static ClimateDistribution HOT = new ClimateDistribution(Climate.HOT, "HOT");
-    public static ClimateDistribution MEDIUM = new ClimateDistribution(Climate.COOL, Climate.WARM, "MEDIUM");
-    public static ClimateDistribution PLAINS = new ClimateDistribution(
+    public static ClimateDistribution SNOWY = new ClimateDistribution("SNOWY", Climate.SNOWY);
+    public static ClimateDistribution COOL = new ClimateDistribution("COOL", Climate.COOL);
+    public static ClimateDistribution WARM = new ClimateDistribution("WARM", Climate.WARM);
+    public static ClimateDistribution HOT = new ClimateDistribution("HOT", Climate.HOT);
+    public static ClimateDistribution SNOWYCOOL = new ClimateDistribution("SNOWYCOOL", Climate.SNOWY, Climate.COOL);
+    public static ClimateDistribution SNOWYWARM = new ClimateDistribution("SNOWYWARM", Climate.SNOWY, Climate.WARM);
+    public static ClimateDistribution SNOWYHOT = new ClimateDistribution("SNOWYHOT", Climate.SNOWY, Climate.HOT);
+    // left in for existing config compatibility:
+    public static ClimateDistribution MEDIUM = new ClimateDistribution("MEDIUM", Climate.COOL, Climate.WARM);
+    // same as MEDIUM:
+    public static ClimateDistribution COOLWARM = new ClimateDistribution("COOLWARM", Climate.COOL, Climate.WARM);
+    public static ClimateDistribution COOLHOT = new ClimateDistribution("COOLHOT", Climate.COOL, Climate.HOT);
+    public static ClimateDistribution WARMHOT = new ClimateDistribution("WARMHOT", Climate.WARM, Climate.HOT);
+    public static ClimateDistribution NOTHOT = new ClimateDistribution(
+        "NOTHOT",
+        Climate.SNOWY,
+        Climate.COOL,
+        Climate.WARM);
+    public static ClimateDistribution NOTWARM = new ClimateDistribution(
+        "NOTWARM",
+        Climate.SNOWY,
+        Climate.COOL,
+        Climate.HOT);
+    public static ClimateDistribution NOTCOOL = new ClimateDistribution(
+        "NOTCOOL",
+        Climate.SNOWY,
+        Climate.WARM,
+        Climate.HOT);
+    public static ClimateDistribution PLAINS = new ClimateDistribution( // left in for existing config compatibility
+        "PLAINS",
         Climate.COOL,
         Climate.WARM,
-        Climate.HOT,
-        "PLAINS");
-    public static ClimateDistribution OCEAN = new ClimateDistribution(Climate.OCEAN, "OCEAN");
-    public static ClimateDistribution DEEP_OCEAN = new ClimateDistribution(Climate.DEEP_OCEAN, "DEEP_OCEAN");
+        Climate.HOT);
+    public static ClimateDistribution NOTSNOWY = new ClimateDistribution( // same as PLAINS
+        "NOTSNOWY",
+        Climate.COOL,
+        Climate.WARM,
+        Climate.HOT);
+    public static ClimateDistribution OCEAN = new ClimateDistribution("OCEAN", Climate.OCEAN);
+    public static ClimateDistribution DEEP_OCEAN = new ClimateDistribution("DEEP_OCEAN", Climate.DEEP_OCEAN);
     public static ClimateDistribution LAND = new ClimateDistribution(
+        "LAND",
+        Climate.SNOWY,
+        Climate.COOL,
+        Climate.WARM,
+        Climate.HOT);
+    public static ClimateDistribution WATER = new ClimateDistribution("WATER", Climate.OCEAN, Climate.DEEP_OCEAN);
+    public static ClimateDistribution ALL = new ClimateDistribution(
+        "ALL",
         Climate.SNOWY,
         Climate.COOL,
         Climate.WARM,
         Climate.HOT,
-        "LAND");
+        Climate.OCEAN,
+        Climate.DEEP_OCEAN);
 
-    public ClimateDistribution(Climate base, String name) {
-        climates.add(base);
-        this.name = name;
-        list.add(this);
-    }
-
-    private ClimateDistribution(Climate one, Climate two, String name) {
-        climates.add(one);
-        climates.add(two);
-        this.name = name;
-        list.add(this);
-    }
-
-    private ClimateDistribution(Climate one, Climate two, Climate three, String name) {
-        climates.add(one);
-        climates.add(two);
-        climates.add(three);
-        this.name = name;
-        list.add(this);
-    }
-
-    private ClimateDistribution(Climate one, Climate two, Climate three, Climate four, String name) {
-        climates.add(one);
-        climates.add(two);
-        climates.add(three);
-        climates.add(four);
+    public ClimateDistribution(String name, Climate... base) {
+        for (int i = 0; i < base.length; i++) {
+            climates.add(base[i]);
+        }
         this.name = name;
         list.add(this);
     }
