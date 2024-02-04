@@ -1,9 +1,6 @@
-package climateControl.genLayerPack;
+package net.minecraft.world.gen.layer;
 
-import net.minecraft.world.gen.layer.GenLayer;
-import net.minecraft.world.gen.layer.IntCache;
-
-public class GenLayerEdge extends GenLayerPack {
+public class GenLayerEdge extends GenLayer {
 
     private final GenLayerEdge.Mode field_151627_c;
 

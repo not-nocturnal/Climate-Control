@@ -50,7 +50,7 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 public class ClimateControl {
 
     public static Logger logger = new Zeno410Logger("ClimateControl").logger();
-    public static boolean testing = true;
+    public static boolean testing = false;
 
     private Configuration config;
     // private OldClimateControlSettings settings = new OldClimateControlSettings();

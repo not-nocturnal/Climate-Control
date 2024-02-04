@@ -3,21 +3,18 @@ package climateControl.utils;
 import java.lang.reflect.Field;
 import java.util.logging.Logger;
 
-import net.minecraft.launchwrapper.Launch;
-
 /**
  *
  * @author Zeno410
  */
 public class Accessor<ObjectType, FieldType> {
 
-    private static boolean isDeobf = ((boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment"));
     public static final Logger logger = new Zeno410Logger("Accessor").logger();
     private Field field;
     private final String fieldName;
 
-    public Accessor(String _fieldName, String _deobfName) {
-        fieldName = isDeobf ? _deobfName : _fieldName;
+    public Accessor(String _fieldName) {
+        fieldName = _fieldName;
     }
 
     private Field field(ObjectType example) {

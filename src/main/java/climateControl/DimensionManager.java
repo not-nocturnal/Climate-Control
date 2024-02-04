@@ -62,8 +62,7 @@ public class DimensionManager {
     public static Logger logger = new Zeno410Logger("DimensionManager").logger();
 
     private Accessor<GenLayerRiverMix, GenLayerPack> riverMixBiome = new Accessor<GenLayerRiverMix, GenLayerPack>(
-        "field_75910_b",
-        "biomePatternGeneratorChain");
+        "field_75910_b");
 
     private final ClimateControlSettings newSettings;
     private final CCDimensionSettings dimensionSettings;
@@ -403,15 +402,13 @@ public class DimensionManager {
                     LockGenLayers biomeLocker = new LockGenLayers();
                     WorldChunkManager chunkGenerator = world.getWorldChunkManager();
                     Accessor<WorldChunkManager, GenLayer> worldGenLayer = new Accessor<WorldChunkManager, GenLayer>(
-                        "field_76944_d",
-                        "genBiomes");
+                        "field_76944_d");
                     GenLayer toLock = worldGenLayer.get(chunkGenerator);
                     if (toLock instanceof GenLayerRiverMixWrapper) {
                         toLock = original;
                     }
                     Accessor<GenLayerRiverMix, GenLayer> riverMixBiome = new Accessor<GenLayerRiverMix, GenLayer>(
-                        "field_75910_b",
-                        "biomePatternGeneratorChain");
+                        "field_75910_b");
                     toLock = riverMixBiome.get((GenLayerRiverMix) toLock);
                     biomeLocker.lock(toLock, dimension, world, currentSettings);
                 }

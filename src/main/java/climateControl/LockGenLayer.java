@@ -27,12 +27,9 @@ public class LockGenLayer extends SavedNumberedItems<PlaneLocated<Integer>> {
     public static Logger logger = new Zeno410Logger("LockedBiomes").logger();
 
     private static Accessor<GenLayerPack, GenLayerPack> genLayerPackParent = new Accessor<GenLayerPack, GenLayerPack>(
-        "field_75909_a",
-        "parent");
+        "field_75909_a");
 
-    private static Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>(
-        "field_75909_a",
-        "parent");
+    private static Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a");
 
     private final Filter<GenLayer> targetLayerDetector;
     private final String targetName;
