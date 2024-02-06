@@ -32,9 +32,6 @@ public class BoPSubBiomeReplacer extends BiomeReplacer {
     public int replacement(int currentBiomeId, IntRandomizer randomizer, int x, int z) {
 
         List<BiomeEntry> currentSubBiomes = BOPBiomeManager.overworldSubBiomes[currentBiomeId];
-        if (currentBiomeId == 24) {
-            currentSubBiomes = null; //prevents BoP sub-biomes generating in deep ocean
-        }
         BOPSubBiome selectedSubBiome = currentSubBiomes != null
             ? (BOPSubBiome) currentSubBiomes.get(randomizer.nextInt(currentSubBiomes.size())).biome
             : null;
