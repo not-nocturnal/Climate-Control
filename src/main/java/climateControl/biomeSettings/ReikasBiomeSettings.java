@@ -20,10 +20,10 @@ public class ReikasBiomeSettings extends BiomeSettings {
     public static final String reikasCategory = "ReikasSettings";
     public final Category reikasSettings = new Category(reikasCategory);
 
-    public final Element enderForest = new Element("Ender Forest", 47, "MEDIUM");
+    public final Element enderForest = new Element("Ender Forest", 47, "COOLWARM");
     public final Element island = new Element("Island", 101, "OCEAN");
-    public final Element plains = new Element("Plains", 102, "PLAINS");
-    public final Element rainbowForest = new Element("Rainbow Forest", 48, "MEDIUM");
+    public final Element plains = new Element("Plains", 102, "NOTSNOWY");
+    public final Element rainbowForest = new Element("Rainbow Forest", 48, "COOLWARM");
     public final Element skyland = new Element("Skyland", 100, "LAND");
 
     public ReikasBiomeSettings() {

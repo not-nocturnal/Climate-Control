@@ -55,14 +55,14 @@ public class VanillaBiomeSettings extends BiomeSettings { // biome incidences. N
     Element birchForest = new Element(birchForestName, 27, 10, Climate.WARM.name);
     Element coldTaiga = new Element(coldTaigaName, 30, 10, Climate.SNOWY.name);
     Element desert = new Element(desertName, 2, 30, true, Climate.HOT.name);
-    Element extremeHills = new Element(extremeHillsName, 3, 20, ClimateDistribution.MEDIUM.name());
-    Element forest = new Element(forestName, 4, 20, ClimateDistribution.MEDIUM.name());
+    Element extremeHills = new Element(extremeHillsName, 3, 20, ClimateDistribution.COOLWARM.name());
+    Element forest = new Element(forestName, 4, 20, ClimateDistribution.COOLWARM.name());
     Element icePlains = new Element(icePlainsName, 12, 30, Climate.SNOWY.name);
     Element jungle = new Element(jungleName, 21, 5, Climate.WARM.name);
     Element megaTaiga = new Element(megaTaigaName, 32, 5, Climate.COOL.name);
     Element mesaPlateau = new Element(mesaPlateauName, 39, 1, Climate.HOT.name);
     Element mesaPlateau_F = new Element(mesaPlateau_FName, 38, 4, Climate.HOT.name);
-    Element plains = new Element(plainsName, 1, 30, true, ClimateDistribution.PLAINS.name());
+    Element plains = new Element(plainsName, 1, 30, true, ClimateDistribution.NOTSNOWY.name());
     Element roofedForest = new Element(roofedForestName, 29, 10, Climate.COOL.name);
     Element savanna = new Element(savannaName, 35, 20, true, Climate.HOT.name);
     Element swampland = new Element(swamplandName, 6, 10, Climate.WARM.name);
