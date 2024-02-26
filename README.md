@@ -3,12 +3,12 @@ A Minecraft mod for changing climate and biomes without chunk boundaries
 [Original Curseforge Link](https://www.curseforge.com/minecraft/mc-mods/climate-control-geographi)
 #
 # WARNING FOR ANYONE UPGRADING FROM A PREVIOUS VERSION
-***\>\> If using with Biomes O' Plenty, this will very likely create some degree of chunk wall issues in existing worlds \<\<***
+***\>\> If using with Biomes O' Plenty, this will likely create some degree of chunk wall issues in existing worlds \<\<***
 
 Whether this matters or not is up to you, but please be aware of this before installing.  
 How it might interact depends on your current version, as well as whether or not you have BoP sub-biomes enabled in the config. See the following table for what to expect:
 
-![table1](https://github.com/not-nocturnal/Climate-Control/assets/8378762/45efdc51-0ee4-4a49-a87d-89c3ac669e41)
+![table1](https://github.com/not-nocturnal/Climate-Control/assets/8378762/e7abd56c-bf0c-47c3-84eb-0883e8eae285)
 
 Tropical landmasses stopping generation abruptly looks quite jarring as the volcano parts of them are quite tall, however they are confined to deep ocean, so there's a good chance it would be out of sight and out of mind. Sub-biomes on the other hand are tricky, as it heavily depends on which (BoP) sub-biome capable biomes you happen to have partially explored, and where in those they might generate. How noticeable it is depends heavily on the biome and your luck. When in doubt, just take a backup, load up your world and check around anywhere you care about to see if there's anything egregious. I've linked an imgur album [here](https://imgur.com/a/2PL9cXX) of some examples I found during my testing. Keep in mind these were generated intentionally, so how it is for you may vary a lot.
 
