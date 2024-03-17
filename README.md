@@ -14,8 +14,10 @@ Tropical landmasses stopping generation abruptly looks quite jarring as the volc
 
 **Also, this version has been minimally tested and only with GTNH-2.5.1, so use at your own risk - I strongly advise making a backup of your world prior to upgrading, and making sure you are ok with how new chunks are generating before continuing to play.**
 #
-### KNOWN INCOMPATIBILITIES
+### KNOWN INCOMPATIBILITIES/ISSUES
 Realistic World Gen - ***remove it or biome generation will be extremely broken***
+
+***\>\> Quitting to main menu and creating or loading worlds will result in broken biome generation until MC is restarted \<\<***
 
 #
 ## 0.9.2-custom changes
