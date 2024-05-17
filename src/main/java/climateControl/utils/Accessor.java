@@ -11,13 +11,14 @@ import net.minecraft.launchwrapper.Launch;
  */
 public class Accessor<ObjectType, FieldType> {
 
-    private static boolean isDeobf = ((boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment"));
     public static final Logger logger = new Zeno410Logger("Accessor").logger();
     private Field field;
     private final String fieldName;
+    static final boolean isDevEnv = (boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment");
 
     public Accessor(String _fieldName, String _deobfName) {
-        fieldName = isDeobf ? _deobfName : _fieldName;
+        if (isDevEnv) fieldName = _deobfName;
+        else fieldName = _fieldName;
     }
 
     private Field field(ObjectType example) {

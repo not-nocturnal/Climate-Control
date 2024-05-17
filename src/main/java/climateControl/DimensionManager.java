@@ -61,7 +61,7 @@ public class DimensionManager {
 
     public static Logger logger = new Zeno410Logger("DimensionManager").logger();
 
-    private Accessor<GenLayerRiverMix, GenLayerPack> riverMixBiome = new Accessor<GenLayerRiverMix, GenLayerPack>(
+    private Accessor<GenLayerRiverMix, GenLayerPack> riverMixBiome = new Accessor<>(
         "field_75910_b",
         "biomePatternGeneratorChain");
 
@@ -402,14 +402,12 @@ public class DimensionManager {
                     // lock manually
                     LockGenLayers biomeLocker = new LockGenLayers();
                     WorldChunkManager chunkGenerator = world.getWorldChunkManager();
-                    Accessor<WorldChunkManager, GenLayer> worldGenLayer = new Accessor<WorldChunkManager, GenLayer>(
-                        "field_76944_d",
-                        "genBiomes");
+                    Accessor<WorldChunkManager, GenLayer> worldGenLayer = new Accessor<>("field_76944_d", "genBiomes");
                     GenLayer toLock = worldGenLayer.get(chunkGenerator);
                     if (toLock instanceof GenLayerRiverMixWrapper) {
                         toLock = original;
                     }
-                    Accessor<GenLayerRiverMix, GenLayer> riverMixBiome = new Accessor<GenLayerRiverMix, GenLayer>(
+                    Accessor<GenLayerRiverMix, GenLayer> riverMixBiome = new Accessor<>(
                         "field_75910_b",
                         "biomePatternGeneratorChain");
                     toLock = riverMixBiome.get((GenLayerRiverMix) toLock);
