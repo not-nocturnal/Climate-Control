@@ -21,7 +21,7 @@ public class TestGeneratorPair {
 
     private Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a");
 
-    private AccessLong<GenLayer> genLayerSeed = new AccessLong<GenLayer>("field_75907_b");
+    private AccessLong<GenLayer> genLayerSeed = new AccessLong<GenLayer>("field_75907_b", "worldGenSeed");
 
     public TestGeneratorPair(GenLayer oldGen, GenLayer newGen) {
         this.oldGen = oldGen;

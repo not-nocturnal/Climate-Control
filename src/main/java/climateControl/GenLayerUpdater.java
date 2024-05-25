@@ -14,8 +14,9 @@ import climateControl.utils.Accessor;
  */
 public class GenLayerUpdater {
 
-    public static final Accessor<WorldChunkManager, GenLayer> accessGenLayer = new Accessor<WorldChunkManager, GenLayer>(
-        "field_76944_d");
+    public static final Accessor<WorldChunkManager, GenLayer> accessGenLayer = new Accessor<>(
+        "field_76944_d",
+        "genBiomes");
 
     public static final Accessor<WorldChunkManager, GenLayer> accessBiomeIndex = new Accessor<WorldChunkManager, GenLayer>(
         "field_76945_e");

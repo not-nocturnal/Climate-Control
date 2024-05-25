@@ -12,9 +12,11 @@ public class Accessor<ObjectType, FieldType> {
     public static final Logger logger = new Zeno410Logger("Accessor").logger();
     private Field field;
     private final String fieldName;
+    static final boolean isDevEnv = (boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment");
 
-    public Accessor(String _fieldName) {
-        fieldName = _fieldName;
+    public Accessor(String _fieldName, String _deobfName) {
+        if (isDevEnv) fieldName = _deobfName;
+        else fieldName = _fieldName;
     }
 
     private Field field(ObjectType example) {
