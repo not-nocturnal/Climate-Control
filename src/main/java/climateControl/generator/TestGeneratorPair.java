@@ -17,9 +17,10 @@ public class TestGeneratorPair {
     private GenLayer newGen;
 
     private Accessor<GenLayerPack, GenLayerPack> genLayerPackParent = new Accessor<GenLayerPack, GenLayerPack>(
-        "field_75909_a");
+        "field_75909_a",
+        "parent");
 
-    private Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a");
+    private Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a", "parent");
 
     private AccessLong<GenLayer> genLayerSeed = new AccessLong<GenLayer>("field_75907_b", "worldGenSeed");
 
