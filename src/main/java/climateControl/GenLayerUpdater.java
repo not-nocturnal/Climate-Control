@@ -19,8 +19,7 @@ public class GenLayerUpdater {
         "genBiomes");
 
     public static final Accessor<WorldChunkManager, GenLayer> accessBiomeIndex = new Accessor<WorldChunkManager, GenLayer>(
-        "field_76945_e",
-        "biomeIndexLayer");
+        "field_76945_e");
 
     public void update(GenLayerRiverMixWrapper riverMix, WorldProvider provider) {
         accessGenLayer.setField(provider.worldChunkMgr, riverMix);

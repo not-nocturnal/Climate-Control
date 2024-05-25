@@ -23,6 +23,7 @@ public class GenLayerSubBiome extends GenLayerPack {
     private GenLayer rivers;
     private final SubBiomeChooser subBiomeChooser;
     private final BiomeSwapper mBiomes;
+    private BiomeReplacer BoPSubBiomeReplacer;
 
     private IntRandomizer randomCallback = new IntRandomizer() {
 
@@ -39,6 +40,15 @@ public class GenLayerSubBiome extends GenLayerPack {
         this.subBiomeChooser = subBiomeChooser;
         this.mBiomes = mBiomes;
         this.initChunkSeed(0, 0);
+        try {
+            if (doBoP) {
+                BoPSubBiomeReplacer = new BoPSubBiomeReplacer(randomCallback);
+                logger.info("Bop set up");
+            }
+        } catch (java.lang.NoClassDefFoundError e) {
+            BoPSubBiomeReplacer = null;
+            logger.info("no bop ");
+        }
     }
 
     /**

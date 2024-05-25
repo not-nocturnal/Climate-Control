@@ -34,7 +34,7 @@ public class LockGenLayers {
     public static final int LOCATIONS_BEFORE_RESET = 1;
     LockGenLayer biomeLock = new LockGenLayer("Biomes", isBiomeLayer(), Acceptor.to(toGenerateFor));
     LockGenLayer subBiomeLock = new LockGenLayer("SubBiomes", isSubBiomeLayer(), Acceptor.to(toGenerateFor));
-    private Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a", "parent");
+    private Accessor<GenLayer, GenLayer> genLayerParent = new Accessor<GenLayer, GenLayer>("field_75909_a");
 
     public LockGenLayers() {
 
